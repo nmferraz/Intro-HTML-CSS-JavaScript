@@ -1,0 +1,72 @@
+﻿.LegendaConjunto {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #00ff00;	
+}
+
+.LinhaTabela {	
+	margin: 3px;
+	background-color: lightgreen;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	/*text-align: right;*/
+	color: #999666;
+}
+
+.ItensForm {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #333333;
+}
+
+.TabelaComLimites {
+    border: 2px solid #0093DD;
+    margin: auto;
+}
+
+.TabelaSemLimites {
+    border: 0px;
+    margin: auto;
+}
+
+.AlinhaCentro {
+    text-align: center;
+}
+
+.AlinhaDireita {
+     text-align: right;
+}
+
+.AlinhaEsquerda {
+    text-align: left;
+}
+
+.AlinhaJustificado {
+    text-align: justify;
+}
+
+#TabelaGeral {
+    margin: auto;
+    width: 80%;    
+}
+
+body {
+	margin: 0px;
+}
+
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	color: #996633;
+}
+
+p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-align: justify;
+	color: #336666;
+}

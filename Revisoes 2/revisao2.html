@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title> Teste de revisões nº2</title>
+
+<script src="externo.js"></script>
+
+<link href="estilos.css" type="text/css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <table id="TabelaGeral">
+        <tr>
+            <td>
+                <form name="escolha" action="valescolha.html" method="GET">
+                    <fieldset>
+                        <legend class="LegendaConjunto">Utilizador</legend>
+
+                        <table class="TabelaComLimites">
+                            <tr>
+                                <td class="LinhaTabela">
+                                    Nome de utilizador:
+                                </td>
+                                <td class="ItensForm">
+                                    <input type="text" name="login" size="12" maxlength="10">
+                                </td>
+                                <td class="LinhaTabela">
+                                    Senha de acesso:
+                                </td>
+                                <td class="ItensForm">
+                                    <input type="password" name="senha" size="12" maxlength="10">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend class="LegendaConjunto">Dados Pessoais</legend>
+
+                        <table class="TabelaComLimites">
+                            <tr>
+                                <td class="LinhaTabela">
+                                    Nome:
+                                </td>
+                                <td class="ItensForm">
+                                    <input type="text" name="nome" size="55" maxlength="80">
+                                </td>
+
+                                <td rowspan=3 class="LinhaTabela">
+                                    País
+                                </td>
+                                <td rowspan=3 class="ItensForm">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" name="pais">Portugal
+                                                <br>
+                                                <input type="radio" name="pais">Espanha
+                                                <br>
+                                                <input type="radio" name="pais">Alemanha
+                                                <br>
+                                                <input type="radio" name="pais">França
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                                <td rowspan=3 class="LinhaTabela">
+                                    Cor preferida:
+                                </td>
+                                <td rowspan=3 class="ItensForm" size=5>
+                                    <table>
+                                    <tr>
+                                        <td>
+                                            <select name="cor" size="5" class="ItensForm">
+                                                <option value="Amarelo">
+                                                    Amarelo
+                                                </option>
+                                                <option value="Azul">
+                                                    Azul
+                                                </option>
+                                                <option value="Verde">
+                                                    Verde
+                                                </option>
+                                                <option value="Vermelho" selected>
+                                                    Vermelho
+                                                </option>
+                                                <option value="Outra">
+                                                    Outra
+                                                </option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="LinhaTabela">
+                                    Localidade:
+                                </td>
+                                <td class="ItensForm">
+                                    <input type="text" name="local" size="25" maxlength="30">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="LinhaTabela">
+                                    Data de nascimento:
+                                </td>
+                                <td class="ItensForm">
+                                    <input type="date" name="data" size="10" maxlength="20">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend class="LegendaConjunto">Filmes 2020</legend>
+                        <table class="TabelaSemLimites">
+
+                            <tr class="AlinhaCentro">
+                                <td>
+                                    <img src="imagens/alive.jpg" onClick="clicaImagem(filme[0])"/>
+                                </td>
+                                <td>
+                                    <img src="imagens/blackbox.jpg" onClick="clicaImagem(filme[1])"/>
+                                </td>
+                                <td>
+                                    <img src="imagens/call.jpg" onClick="clicaImagem(filme[2])"/>
+                                </td>
+                                <td>
+                                    <img src="imagens/holidate.jpg" onClick="clicaImagem(filme[3])"/>
+                                </td>
+                                <td>
+                                    <img src="imagens/kissground.jpg" onClick="clicaImagem(filme[4])"/>
+                                </td>
+                                <td>
+                                    <img src="imagens/mank.jpg" onClick="clicaImagem(filme[5])"/>
+                                </td>
+                                <td>
+                                    <img src="imagens/oldguard.jpg" onClick="clicaImagem(filme[6])"/>
+                                </td>
+                                <td>
+                                    <img src="imagens/ppower.jpg" onClick="clicaImagem(filme[7])"/>
+                                </td>
+                            </tr>
+
+                            <tr class="LinhaTabela AlinhaCentro">
+                                <td>
+                                    #Alive
+                                </td>
+                                <td>
+                                    Black Box
+                                </td>
+                                <td>
+                                    Call
+                                </td>
+                                <td>
+                                    Holidate
+                                </td>
+                                <td>
+                                    Kiss the Ground
+                                </td>
+                                <td>
+                                    Mank
+                                </td>
+                                <td>
+                                    The Old Guard
+                                </td>
+                                <td>
+                                    Project Power
+                                </td>
+                            </tr>
+
+                            <tr class="AlinhaCentro">
+                                <td class="ItensForm">
+                                    <input type="checkbox" name="filme" id="filmeAlive" value="Alive" onClick="mostra(filme[0])" />
+                                </td>
+                                <td class="ItensForm">
+                                    <input type="checkbox" name="filme" id="filmeBlackBox" value="Black Box" onClick="mostra(filme[1])" />
+                                </td>
+                                <td class="ItensForm">
+                                    <input type="checkbox" name="filme" id="filmeCall" value="Call" onClick="mostra(filme[2])" />
+                                </td>
+                                <td class="ItensForm">
+                                    <input type="checkbox" name="filme" id="filmeHolidate" value="Holidate" onClick="mostra(filme[3])" />
+                                </td>
+                                <td class="ItensForm">
+                                    <input type="checkbox" name="filme" id="filmeKissTheGround" value="Kiss the Ground" onClick="mostra(filme[4])" />
+                                </td>
+                                <td class="ItensForm">
+                                    <input type="checkbox" name="filme" id="filmeMank" value="Mank" onClick="mostra(filme[5])" />
+                                </td>
+                                <td class="ItensForm">
+                                    <input type="checkbox" name="filme" id="filmeTheOldGuard" value="The Old Guard" onClick="mostra(filme[6])" />
+                                </td>
+                                <td class="ItensForm">
+                                    <input type="checkbox" name="filme" id="filmeProjectPower" value="Project Power" onClick="mostra(filme[7])" />
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend class="LegendaConjunto">Funções</legend>
+                        <table class="TabelaSemLimites">
+
+                            <tr>
+                                <td>
+                                    <input type="reset" name="limpa" value="Limpar campos" class="ItensForm">
+                                    <input type="submit" name="confirma" value="Enviar dados" class="ItensForm">
+                                    <input type="button" name="nada" value="N�o faz nada" class="ItensForm" onClick="mensagem();">
+                                </td>
+                                </tr>
+
+                        </table>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
